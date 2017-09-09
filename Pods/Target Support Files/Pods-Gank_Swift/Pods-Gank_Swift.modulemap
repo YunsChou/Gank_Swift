@@ -1,0 +1,6 @@
+framework module Pods_Gank_Swift {
+  umbrella header "Pods-Gank_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
