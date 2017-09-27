@@ -8,78 +8,66 @@
 
 import UIKit
 
-enum RequestMethod {
+public enum RequestMethod {
     case get
     case post
 }
 
-class APIConfig {
-    var type: RequestMethod = .get
-    var domain: String = ""
-    var path: String = ""
-    var dict: [String : Any]?
-    var header: [String : String]?
+open class APIConfig {
+    public var method: RequestMethod = .get
+    public var baseURL: String = ""
+    public var url: String = ""
+    public var params: [String : Any]?
+    public var headers: [String : String]?
+    // 上传数据用
+    public var data: Data!
+    public var dataName: String = ""
+    public var fileName: String = ""
+    public var mineType: String = ""
     
     // 初始化方法
-    init(path: String, dict: [String : Any]?) {
-        self.path = path
-        self.dict = dict
+    public init(url: String, params: [String : Any]?) {
+        self.url = url
+        self.params = params
     }
-    
     
     //／ 在子类中重写该方法：配置请求方式
-    func configMethod() -> RequestMethod {
-        return type
+    open func configMethod() -> RequestMethod {
+        return method
     }
     //／ 在子类中重写该方法：配置域名
-    func configBaseURL() -> String {
-        return domain
+    open func configBaseURL() -> String {
+        return baseURL
     }
     //／ 在子类中重写该方法：配置路径
-    func configUrl() -> String {
-        return path
+    open func configUrl() -> String {
+        return url
     }
     //／ 在子类中重写该方法：配置参数
-    func configParams() -> [String: Any] {
-        return dict ?? [:]
+    open func configParams() -> [String: Any] {
+        return params ?? [:]
     }
     /// 在子类中重写该方法：配置header
-    func configHeaders() -> [String : String] {
-        return header ?? [:]
-    }
-}
-
-/****************************************/
-/***************提供网络请求配置************/
-/****************************************/
-protocol APIConfigType {
-    var method: RequestMethod { get }
-    var baseURL: String { get }
-    var url: String { get }
-    var params: [String : Any] { get }
-    var headers: [String : String]? { get }
-}
-
-extension APIConfig: APIConfigType {
-    
-    var method: RequestMethod {
-        return configMethod()
+    open func configHeaders() -> [String : String] {
+        return headers ?? [:]
     }
     
-    var baseURL: String {
-        return configBaseURL()
+    // 上传数据用
+    //／ 在子类中重写该方法：配置数据
+    open func configData() -> Data {
+        return data
     }
-    
-    var url: String {
-        return configUrl()
+    //／ 在子类中重写该方法：配置数据名
+    open func configDataName() -> String {
+        return dataName
     }
-    
-    var params: [String : Any] {
-        return configParams()
+    //／ 在子类中重写该方法：配置数据路径
+    open func configFileName() -> String {
+        return dataName
     }
-    
-    var headers: [String : String]? {
-        return configHeaders()
+    //／ 在子类中重写该方法：配置数据类型
+    open func configMineType() -> String {
+        return mineType
     }
 }
 

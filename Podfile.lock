@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.5.1)
   - EZSwiftExtensions (1.11)
-  - HandyJSON (1.7.2)
+  - HandyJSON (1.8.0)
   - Moya (9.0.0):
     - Moya/Core (= 9.0.0)
   - Moya/Core (9.0.0):
@@ -12,10 +12,10 @@ PODS:
     - RxSwift (~> 3.3)
   - NSObject+Rx (3.0.0):
     - RxSwift (~> 3.0)
-  - Result (3.2.3)
+  - Result (3.2.4)
   - RxSwift (3.6.1)
   - SnapKit (3.2.0)
-  - Then (2.1.0)
+  - Then (2.2.0)
 
 DEPENDENCIES:
   - EZSwiftExtensions
@@ -24,20 +24,20 @@ DEPENDENCIES:
   - Moya/RxSwift
   - NSObject+Rx
   - RxSwift
-  - SnapKit
+  - SnapKit (~> 3.2.0)
   - Then
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   EZSwiftExtensions: 84000042202d9fd574f626cda3064143f27fa767
-  HandyJSON: e7ad0483005826baba1d1c251cd98d0aa8bd8cce
+  HandyJSON: edaaa3278bf4c4c96d6f7382b80d6b91c88d3bf5
   Moya: cf5e6ee93af526532f92614004b8ad2ea60fd845
   NSObject+Rx: 9c60a6e602ca647c0b2b34403383c305b1c6edc5
-  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  Then: 8496793c8fcac95482b943909b440724c7d8d82c
+  Then: 823f9813e1d4d0a814a5ba15e9c9d33ec7aca631
 
-PODFILE CHECKSUM: 15b001c11be2da14c82ae17058f73b9901948f9f
+PODFILE CHECKSUM: 03f7b6bb1ad162c5993e3d0ca30c7054b65e37cf
 
 COCOAPODS: 1.3.1

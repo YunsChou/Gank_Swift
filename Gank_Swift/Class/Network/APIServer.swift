@@ -9,54 +9,66 @@
 import UIKit
 import Moya
 
-let APIServer = MoyaProvider<APIManager>()
+public let APIServer = MoyaProvider<APIManager>()
 
-enum APIManager {
+public enum APIManager {
     case loadConfig(APIConfig)
+    case postDataConfig(APIConfig)
 }
 
 extension APIManager: TargetType {
-    var baseURL: URL {
+    public var baseURL: URL {
         switch self {
         case .loadConfig(let config):
-            return URL(string: config.baseURL)!
+            return URL(string: config.configBaseURL())!
+        case .postDataConfig(let config):
+            return URL(string: config.configBaseURL())!
         }
     }
     
-    var path: String {
+    public var path: String {
         switch self {
         case .loadConfig(let config):
-            return config.url
+            return config.configUrl()
+        case .postDataConfig(let config):
+            return config.configUrl()
         }
     }
     
-    var method: Moya.Method {
+    public var method: Moya.Method {
         switch self {
         case .loadConfig(let config):
-            switch config.method {
+            switch config.configMethod() {
             case .get:
                 return .get
             default:
                 return .post
             }
+        case .postDataConfig(_):
+            return .post
         }
     }
-
-    var sampleData: Data {
+    
+    public var sampleData: Data {
         return "".data(using: String.Encoding.utf8)!
     }
     
-    var task: Task {
+    public var task: Task {
         switch self {
         case .loadConfig(let config):
-            return .requestParameters(parameters: config.params, encoding: URLEncoding.default)
+            return .requestParameters(parameters: config.configParams(), encoding: URLEncoding.default)
+        case .postDataConfig(let config):
+            let formData = MultipartFormData(provider: .data(config.configData()), name: config.configDataName(), fileName: config.configFileName(), mimeType: config.configMineType())
+            return .uploadMultipart([formData])
         }
     }
     
-    var headers: [String: String]? {
+    public var headers: [String: String]? {
         switch self {
         case .loadConfig(let config):
-            return config.headers
+            return config.configHeaders()
+        case .postDataConfig(let config):
+            return config.configHeaders()
         }
     }
 }

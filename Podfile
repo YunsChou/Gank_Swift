@@ -10,6 +10,6 @@ target 'Gank_Swift' do
 	pod 'Moya/RxSwift'
 	pod 'HandyJSON'
 
-	pod 'SnapKit'
+	pod 'SnapKit', '~> 3.2.0'
     pod 'EZSwiftExtensions'
 end

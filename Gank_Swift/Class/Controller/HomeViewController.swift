@@ -84,7 +84,7 @@ extension HomeViewController {
     
     /// rx+moya普通方式请求数据
     func loadNormalData() {
-        let config = APIConfig.init(path: "/api/data/iOS/10/1", dict: nil)
+        let config = APIConfig.init(url: "/api/data/iOS/10/1", params: nil)
         APIServer.rx.request(.loadConfig(config))
             .filterSuccessfulStatusCodes()
             .mapString()

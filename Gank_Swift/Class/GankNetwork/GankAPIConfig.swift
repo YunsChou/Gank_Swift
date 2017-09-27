@@ -16,10 +16,10 @@ class GankAPIConfig: APIConfig {
     }
     //／ 在子类中重写该方法：配置路径
     override func configUrl() -> String {
-        return path
+        return url
     }
     //／ 在子类中重写该方法：配置参数
     override func configParams() -> [String: Any] {
-        return dict ?? [:]
+        return params ?? [:]
     }
 }
