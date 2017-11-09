@@ -12,8 +12,8 @@ import Moya
 public let APIServer = MoyaProvider<APIManager>()
 
 public enum APIManager {
-    case loadDataConfig(APIGetConfig)
-    case postDataConfig(APIPostConfig)
+    case loadDataConfig(APIRequestConfig)
+    case postDataConfig(APIPostDataConfig)
 }
 
 extension APIManager: TargetType {

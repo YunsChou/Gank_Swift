@@ -1,14 +1,14 @@
 //
-//  APIGetConfig.swift
+//  APIRequestConfig.swift
 //  Gank_Swift
 //
-//  Created by Yuns on 2017/11/8.
+//  Created by Yuns on 2017/11/9.
 //  Copyright © 2017年 ZXEVPOP. All rights reserved.
 //
 
 import Foundation
 
-open class APIGetConfig: APIConfig {
+open class APIRequestConfig: APIBaseConfig {
     
     // 参数
     public var params: [String : Any]?
@@ -23,5 +23,3 @@ open class APIGetConfig: APIConfig {
         return params ?? [:]
     }
 }
-
-

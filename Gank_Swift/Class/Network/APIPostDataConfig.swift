@@ -1,14 +1,14 @@
 //
-//  APIPostConfig.swift
+//  APIPostDataConfig.swift
 //  Gank_Swift
 //
-//  Created by Yuns on 2017/11/8.
+//  Created by Yuns on 2017/11/9.
 //  Copyright © 2017年 ZXEVPOP. All rights reserved.
 //
 
 import Foundation
 
-open class APIPostConfig: APIConfig {
+open class APIPostDataConfig: APIBaseConfig {
     
     // 参数
     public var postData: Data!
@@ -42,4 +42,3 @@ open class APIPostConfig: APIConfig {
         return mineType
     }
 }
-

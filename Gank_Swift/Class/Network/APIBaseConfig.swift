@@ -1,19 +1,19 @@
 //
-//  APIConfig.swift
+//  APIBaseConfig.swift
 //  Gank_Swift
 //
-//  Created by Yuns on 2017/9/7.
+//  Created by Yuns on 2017/11/9.
 //  Copyright © 2017年 ZXEVPOP. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public enum RequestMethod {
     case get
     case post
 }
 
-open class APIConfig {
+open class APIBaseConfig {
     public var method: RequestMethod = .get
     public var baseURL: String = ""
     public var path: String = ""

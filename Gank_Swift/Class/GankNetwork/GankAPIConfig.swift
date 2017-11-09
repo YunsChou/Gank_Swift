@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GankAPIConfig: APIGetConfig {
+class GankAPIConfig: APIRequestConfig {
     
     //／ 在子类中重写该方法：配置域名
     override func APIBaseURL() -> String {
