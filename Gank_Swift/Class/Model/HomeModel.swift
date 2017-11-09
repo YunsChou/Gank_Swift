@@ -9,10 +9,7 @@
 import UIKit
 import HandyJSON
 
-class HomeModel: HandyJSON {
-    required init() {
-        
-    }
+struct HomeModel: HandyJSON {
     
     var id: String = ""
     var createAt: Date = Date()

@@ -18,11 +18,13 @@
 		A704FA221F612E0F003F8727 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA201F612E0F003F8727 /* HomeTableViewCell.swift */; };
 		A704FA231F612E0F003F8727 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A704FA211F612E0F003F8727 /* HomeTableViewCell.xib */; };
 		A704FA251F612F71003F8727 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA241F612F71003F8727 /* HomeModel.swift */; };
-		A704FA2B1F6174AE003F8727 /* Response+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA2A1F6174AE003F8727 /* Response+HandyJSON.swift */; };
 		A704FA2F1F617B51003F8727 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA2E1F617B51003F8727 /* DetailViewController.swift */; };
 		A704FA381F621C54003F8727 /* GankAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA351F621C54003F8727 /* GankAPIConfig.swift */; };
 		A704FA391F621C54003F8727 /* GankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA361F621C54003F8727 /* GankModel.swift */; };
-		A704FA3A1F621C54003F8727 /* HandyJSON+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA371F621C54003F8727 /* HandyJSON+Model.swift */; };
+		A7CB463B1FB2F82A004394F2 /* APIGetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB463A1FB2F82A004394F2 /* APIGetConfig.swift */; };
+		A7CB463D1FB2F834004394F2 /* APIPostConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB463C1FB2F834004394F2 /* APIPostConfig.swift */; };
+		A7CB46421FB2FF37004394F2 /* HandyJSON+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */; };
+		A7CB46431FB2FF37004394F2 /* Response+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */; };
 		C97F96615007D92EF72716EA /* Pods_Gank_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4F007AC35A317EB4CB3696 /* Pods_Gank_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,11 +43,13 @@
 		A704FA201F612E0F003F8727 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A704FA211F612E0F003F8727 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		A704FA241F612F71003F8727 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		A704FA2A1F6174AE003F8727 /* Response+HandyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+HandyJSON.swift"; sourceTree = "<group>"; };
 		A704FA2E1F617B51003F8727 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A704FA351F621C54003F8727 /* GankAPIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankAPIConfig.swift; sourceTree = "<group>"; };
 		A704FA361F621C54003F8727 /* GankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankModel.swift; sourceTree = "<group>"; };
-		A704FA371F621C54003F8727 /* HandyJSON+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJSON+Model.swift"; sourceTree = "<group>"; };
+		A7CB463A1FB2F82A004394F2 /* APIGetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetConfig.swift; sourceTree = "<group>"; };
+		A7CB463C1FB2F834004394F2 /* APIPostConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostConfig.swift; sourceTree = "<group>"; };
+		A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJSON+Model.swift"; sourceTree = "<group>"; };
+		A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+HandyJSON.swift"; sourceTree = "<group>"; };
 		B4786CE7CCB5D4549F27B79C /* Pods-Gank_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gank_Swift/Pods-Gank_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		FF4F007AC35A317EB4CB3696 /* Pods_Gank_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +110,7 @@
 		A704FA111F611963003F8727 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				A7CB463F1FB2FEEB004394F2 /* HandyJSON */,
 				A704FA341F621C54003F8727 /* GankNetwork */,
 				A704FA121F611963003F8727 /* Controller */,
 				A704FA131F611963003F8727 /* Model */,
@@ -137,7 +142,8 @@
 			children = (
 				A704FA161F61199F003F8727 /* APIServer.swift */,
 				A704FA181F6119B9003F8727 /* APIConfig.swift */,
-				A704FA2A1F6174AE003F8727 /* Response+HandyJSON.swift */,
+				A7CB463A1FB2F82A004394F2 /* APIGetConfig.swift */,
+				A7CB463C1FB2F834004394F2 /* APIPostConfig.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -156,9 +162,17 @@
 			children = (
 				A704FA351F621C54003F8727 /* GankAPIConfig.swift */,
 				A704FA361F621C54003F8727 /* GankModel.swift */,
-				A704FA371F621C54003F8727 /* HandyJSON+Model.swift */,
 			);
 			path = GankNetwork;
+			sourceTree = "<group>";
+		};
+		A7CB463F1FB2FEEB004394F2 /* HandyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */,
+				A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */,
+			);
+			path = HandyJSON;
 			sourceTree = "<group>";
 		};
 		C9266F124764A04C5AF53517 /* Frameworks */ = {
@@ -318,12 +332,14 @@
 			files = (
 				A704FA2F1F617B51003F8727 /* DetailViewController.swift in Sources */,
 				A704FA221F612E0F003F8727 /* HomeTableViewCell.swift in Sources */,
+				A7CB463B1FB2F82A004394F2 /* APIGetConfig.swift in Sources */,
+				A7CB46431FB2FF37004394F2 /* Response+HandyJSON.swift in Sources */,
 				A704FA1F1F612D66003F8727 /* HomeViewController.swift in Sources */,
 				A704FA381F621C54003F8727 /* GankAPIConfig.swift in Sources */,
+				A7CB46421FB2FF37004394F2 /* HandyJSON+Model.swift in Sources */,
 				A704FA391F621C54003F8727 /* GankModel.swift in Sources */,
+				A7CB463D1FB2F834004394F2 /* APIPostConfig.swift in Sources */,
 				A704FA021F60F8D2003F8727 /* ViewController.swift in Sources */,
-				A704FA3A1F621C54003F8727 /* HandyJSON+Model.swift in Sources */,
-				A704FA2B1F6174AE003F8727 /* Response+HandyJSON.swift in Sources */,
 				A704FA251F612F71003F8727 /* HomeModel.swift in Sources */,
 				A704FA001F60F8D2003F8727 /* AppDelegate.swift in Sources */,
 				A704FA191F6119B9003F8727 /* APIConfig.swift in Sources */,

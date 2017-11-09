@@ -24,14 +24,6 @@ class HomeViewController: UIViewController {
         
     }
     
-    func addRefresh() {
-        
-    }
-    
-    func addTableViewRefresh(tableView: UITableView) {
-        
-    }
-    
     /// rx+moya扩展HandyJSON，请求数据
     func loadHandyJSONData() {
         HomeModel.loadResults(url: "/api/data/iOS/10/1", dict: nil)
@@ -84,8 +76,8 @@ extension HomeViewController {
     
     /// rx+moya普通方式请求数据
     func loadNormalData() {
-        let config = APIConfig.init(url: "/api/data/iOS/10/1", params: nil)
-        APIServer.rx.request(.loadConfig(config))
+        let config = APIGetConfig.init(url: "/api/data/iOS/10/1", dict: nil)
+        APIServer.rx.request(.loadDataConfig(config))
             .filterSuccessfulStatusCodes()
             .mapString()
             .subscribe(onSuccess: { (data) in

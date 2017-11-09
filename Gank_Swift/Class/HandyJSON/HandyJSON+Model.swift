@@ -14,9 +14,9 @@ extension HandyJSON {
     // 基础方法
     static func load(url: String, dict: [String : Any]?) -> Single<GankModel<Self>> {
         // 1、初始化config
-        let config = GankAPIConfig.init(url: url, params: dict)
+        let config = GankAPIConfig.init(url: url, dict: dict)
         // 2、使用MoyaProvider发起请求
-        return APIServer.rx.request(.loadConfig(config))
+        return APIServer.rx.request(.loadDataConfig(config))
             .filterSuccessfulStatusCodes()
             .debug()
             // 3、将数据转为<范型>模型

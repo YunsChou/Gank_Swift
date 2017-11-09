@@ -8,18 +8,10 @@
 
 import UIKit
 
-class GankAPIConfig: APIConfig {
-
+class GankAPIConfig: APIGetConfig {
+    
     //／ 在子类中重写该方法：配置域名
-    override func configBaseURL() -> String {
+    override func APIBaseURL() -> String {
         return "http://gank.io"
-    }
-    //／ 在子类中重写该方法：配置路径
-    override func configUrl() -> String {
-        return url
-    }
-    //／ 在子类中重写该方法：配置参数
-    override func configParams() -> [String: Any] {
-        return params ?? [:]
     }
 }

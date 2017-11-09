@@ -12,33 +12,33 @@ import Moya
 public let APIServer = MoyaProvider<APIManager>()
 
 public enum APIManager {
-    case loadConfig(APIConfig)
-    case postDataConfig(APIConfig)
+    case loadDataConfig(APIGetConfig)
+    case postDataConfig(APIPostConfig)
 }
 
 extension APIManager: TargetType {
     public var baseURL: URL {
         switch self {
-        case .loadConfig(let config):
-            return URL(string: config.configBaseURL())!
+        case .loadDataConfig(let config):
+            return URL(string: config.APIBaseURL())!
         case .postDataConfig(let config):
-            return URL(string: config.configBaseURL())!
+            return URL(string: config.APIBaseURL())!
         }
     }
     
     public var path: String {
         switch self {
-        case .loadConfig(let config):
-            return config.configUrl()
+        case .loadDataConfig(let config):
+            return config.APIPath()
         case .postDataConfig(let config):
-            return config.configUrl()
+            return config.APIPath()
         }
     }
     
     public var method: Moya.Method {
         switch self {
-        case .loadConfig(let config):
-            switch config.configMethod() {
+        case .loadDataConfig(let config):
+            switch config.APIMethod() {
             case .get:
                 return .get
             default:
@@ -55,20 +55,20 @@ extension APIManager: TargetType {
     
     public var task: Task {
         switch self {
-        case .loadConfig(let config):
-            return .requestParameters(parameters: config.configParams(), encoding: URLEncoding.default)
+        case .loadDataConfig(let config):
+            return .requestParameters(parameters: config.APIParams(), encoding: URLEncoding.default)
         case .postDataConfig(let config):
-            let formData = MultipartFormData(provider: .data(config.configData()), name: config.configDataName(), fileName: config.configFileName(), mimeType: config.configMineType())
+            let formData = MultipartFormData(provider: .data(config.APIData()), name: config.APIDataName(), fileName: config.APIFileName(), mimeType: config.APIMineType())
             return .uploadMultipart([formData])
         }
     }
     
     public var headers: [String: String]? {
         switch self {
-        case .loadConfig(let config):
-            return config.configHeaders()
+        case .loadDataConfig(let config):
+            return config.APIHeaders()
         case .postDataConfig(let config):
-            return config.configHeaders()
+            return config.APIHeaders()
         }
     }
 }
