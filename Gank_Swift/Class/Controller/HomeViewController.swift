@@ -18,21 +18,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-//        loadNormalData()
         loadHandyJSONData()
-
-        
     }
     
     /// rx+moya扩展HandyJSON，请求数据
     func loadHandyJSONData() {
-        HomeModel.loadResults(url: "/api/data/iOS/10/1", dict: nil)
+        [HomeModel].request(method: .get, url: "/api/data/iOS/10/1", dict: nil)
             .subscribe(onSuccess: { (results) in
-                // 刷新列表
-                self.homeDatas = results
-                self.tableView.reloadData()
-            })
-            .addDisposableTo(rx.disposeBag)
+            // 刷新列表
+            self.homeDatas = results.results
+            self.tableView.reloadData()
+        })
+        .disposed(by: rx.disposeBag)
+        
     }
     
     
@@ -72,27 +70,6 @@ extension HomeViewController {
             make.edges.equalToSuperview()
         }
     }
-    
-    
-    /// rx+moya普通方式请求数据
-    func loadNormalData() {
-        let config = APIRequestConfig.init(url: "/api/data/iOS/10/1", dict: nil)
-        APIServer.rx.request(.loadDataConfig(config))
-            .filterSuccessfulStatusCodes()
-            .mapString()
-            .subscribe(onSuccess: { (data) in
-                // 数据转模型
-                let model = GankModel<HomeModel>.deserialize(from: data)
-                // 刷新列表
-                self.homeDatas = model?.results
-                self.tableView.reloadData()
-            }, onError: { (error) in
-                print(error)
-            })
-            // NSObject_Rx的使用，避免每次都要创建disposeBag对象
-            .addDisposableTo(rx.disposeBag)
-    }
-
 }
 
 extension HomeViewController: UITableViewDataSource {

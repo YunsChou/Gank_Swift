@@ -12,19 +12,17 @@
 		A704FA051F60F8D2003F8727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A704FA031F60F8D2003F8727 /* Main.storyboard */; };
 		A704FA071F60F8D2003F8727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A704FA061F60F8D2003F8727 /* Assets.xcassets */; };
 		A704FA0A1F60F8D2003F8727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A704FA081F60F8D2003F8727 /* LaunchScreen.storyboard */; };
-		A704FA171F61199F003F8727 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA161F61199F003F8727 /* APIServer.swift */; };
 		A704FA1F1F612D66003F8727 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA1E1F612D66003F8727 /* HomeViewController.swift */; };
 		A704FA221F612E0F003F8727 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA201F612E0F003F8727 /* HomeTableViewCell.swift */; };
 		A704FA231F612E0F003F8727 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A704FA211F612E0F003F8727 /* HomeTableViewCell.xib */; };
 		A704FA251F612F71003F8727 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA241F612F71003F8727 /* HomeModel.swift */; };
 		A704FA2F1F617B51003F8727 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA2E1F617B51003F8727 /* DetailViewController.swift */; };
-		A704FA381F621C54003F8727 /* GankAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA351F621C54003F8727 /* GankAPIConfig.swift */; };
-		A704FA391F621C54003F8727 /* GankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A704FA361F621C54003F8727 /* GankModel.swift */; };
-		A7CB46421FB2FF37004394F2 /* HandyJSON+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */; };
+		A7C2EA4020566F2900825C61 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2EA3A20566F2900825C61 /* APIModel.swift */; };
+		A7C2EA4120566F2900825C61 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2EA3B20566F2900825C61 /* HTTPClient.swift */; };
+		A7C2EA4220566F2900825C61 /* APIUploadConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2EA3D20566F2900825C61 /* APIUploadConfig.swift */; };
+		A7C2EA4320566F2900825C61 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2EA3E20566F2900825C61 /* APIServer.swift */; };
+		A7C2EA4420566F2900825C61 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2EA3F20566F2900825C61 /* APIConfig.swift */; };
 		A7CB46431FB2FF37004394F2 /* Response+HandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */; };
-		A7D69C551FB3FF77000D1252 /* APIBaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D69C541FB3FF77000D1252 /* APIBaseConfig.swift */; };
-		A7D69C571FB3FF84000D1252 /* APIRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D69C561FB3FF84000D1252 /* APIRequestConfig.swift */; };
-		A7D69C591FB3FF90000D1252 /* APIPostDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D69C581FB3FF90000D1252 /* APIPostDataConfig.swift */; };
 		C97F96615007D92EF72716EA /* Pods_Gank_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4F007AC35A317EB4CB3696 /* Pods_Gank_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,19 +35,17 @@
 		A704FA061F60F8D2003F8727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A704FA091F60F8D2003F8727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A704FA0B1F60F8D2003F8727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A704FA161F61199F003F8727 /* APIServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
 		A704FA1E1F612D66003F8727 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A704FA201F612E0F003F8727 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A704FA211F612E0F003F8727 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		A704FA241F612F71003F8727 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		A704FA2E1F617B51003F8727 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		A704FA351F621C54003F8727 /* GankAPIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankAPIConfig.swift; sourceTree = "<group>"; };
-		A704FA361F621C54003F8727 /* GankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankModel.swift; sourceTree = "<group>"; };
-		A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HandyJSON+Model.swift"; sourceTree = "<group>"; };
+		A7C2EA3A20566F2900825C61 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		A7C2EA3B20566F2900825C61 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		A7C2EA3D20566F2900825C61 /* APIUploadConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUploadConfig.swift; sourceTree = "<group>"; };
+		A7C2EA3E20566F2900825C61 /* APIServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
+		A7C2EA3F20566F2900825C61 /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+HandyJSON.swift"; sourceTree = "<group>"; };
-		A7D69C541FB3FF77000D1252 /* APIBaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBaseConfig.swift; sourceTree = "<group>"; };
-		A7D69C561FB3FF84000D1252 /* APIRequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestConfig.swift; sourceTree = "<group>"; };
-		A7D69C581FB3FF90000D1252 /* APIPostDataConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostDataConfig.swift; sourceTree = "<group>"; };
 		B4786CE7CCB5D4549F27B79C /* Pods-Gank_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gank_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gank_Swift/Pods-Gank_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		FF4F007AC35A317EB4CB3696 /* Pods_Gank_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gank_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				A7CB463F1FB2FEEB004394F2 /* HandyJSON */,
-				A704FA341F621C54003F8727 /* GankNetwork */,
 				A704FA121F611963003F8727 /* Controller */,
 				A704FA131F611963003F8727 /* Model */,
 				A704FA141F611963003F8727 /* Network */,
@@ -140,10 +135,9 @@
 		A704FA141F611963003F8727 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A704FA161F61199F003F8727 /* APIServer.swift */,
-				A7D69C541FB3FF77000D1252 /* APIBaseConfig.swift */,
-				A7D69C561FB3FF84000D1252 /* APIRequestConfig.swift */,
-				A7D69C581FB3FF90000D1252 /* APIPostDataConfig.swift */,
+				A7C2EA3C20566F2900825C61 /* Base */,
+				A7C2EA3A20566F2900825C61 /* APIModel.swift */,
+				A7C2EA3B20566F2900825C61 /* HTTPClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -157,19 +151,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A704FA341F621C54003F8727 /* GankNetwork */ = {
+		A7C2EA3C20566F2900825C61 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A704FA351F621C54003F8727 /* GankAPIConfig.swift */,
-				A704FA361F621C54003F8727 /* GankModel.swift */,
+				A7C2EA3E20566F2900825C61 /* APIServer.swift */,
+				A7C2EA3F20566F2900825C61 /* APIConfig.swift */,
+				A7C2EA3D20566F2900825C61 /* APIUploadConfig.swift */,
 			);
-			path = GankNetwork;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		A7CB463F1FB2FEEB004394F2 /* HandyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				A7CB46401FB2FF36004394F2 /* HandyJSON+Model.swift */,
 				A7CB46411FB2FF36004394F2 /* Response+HandyJSON.swift */,
 			);
 			path = HandyJSON;
@@ -218,6 +212,7 @@
 				TargetAttributes = {
 					A704F9FB1F60F8D2003F8727 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8KZZS7H38L;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -270,6 +265,7 @@
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
@@ -282,6 +278,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
@@ -332,18 +329,16 @@
 			files = (
 				A704FA2F1F617B51003F8727 /* DetailViewController.swift in Sources */,
 				A704FA221F612E0F003F8727 /* HomeTableViewCell.swift in Sources */,
+				A7C2EA4220566F2900825C61 /* APIUploadConfig.swift in Sources */,
+				A7C2EA4120566F2900825C61 /* HTTPClient.swift in Sources */,
 				A7CB46431FB2FF37004394F2 /* Response+HandyJSON.swift in Sources */,
 				A704FA1F1F612D66003F8727 /* HomeViewController.swift in Sources */,
-				A704FA381F621C54003F8727 /* GankAPIConfig.swift in Sources */,
-				A7CB46421FB2FF37004394F2 /* HandyJSON+Model.swift in Sources */,
-				A704FA391F621C54003F8727 /* GankModel.swift in Sources */,
-				A7D69C591FB3FF90000D1252 /* APIPostDataConfig.swift in Sources */,
+				A7C2EA4020566F2900825C61 /* APIModel.swift in Sources */,
 				A704FA021F60F8D2003F8727 /* ViewController.swift in Sources */,
-				A7D69C571FB3FF84000D1252 /* APIRequestConfig.swift in Sources */,
 				A704FA251F612F71003F8727 /* HomeModel.swift in Sources */,
 				A704FA001F60F8D2003F8727 /* AppDelegate.swift in Sources */,
-				A7D69C551FB3FF77000D1252 /* APIBaseConfig.swift in Sources */,
-				A704FA171F61199F003F8727 /* APIServer.swift in Sources */,
+				A7C2EA4320566F2900825C61 /* APIServer.swift in Sources */,
+				A7C2EA4420566F2900825C61 /* APIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8KZZS7H38L;
 				INFOPLIST_FILE = Gank_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -485,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8KZZS7H38L;
 				INFOPLIST_FILE = Gank_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
